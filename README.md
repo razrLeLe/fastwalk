@@ -1,0 +1,38 @@
+# fastwalk
+
+A multi-thread implementation of node2vec random walk.
+
+### Introduction
+
+This repository provides a multi-thread implementation of node2vec random walk, and with alias table based on LRU cache, it can process with limited memory usage, so that walking through a giant graph on a single machine can be possible.
+
+Tested for a graph that contains 23 thousand nodes and 23 million edges, with parameter
+
+`--walk_length=80 --num_walks=10 --workers=20 --max_nodes=50000 --max_edges=100000 --p=10 --q=0.01`
+
+only 11GB memory used, and finished walking within 2 hours.
+
+### Prerequisites
+
+- g++ 4.8+.
+
+### Usage
+
+Compile first:
+
+`make`
+
+then run with:
+
+`./fastwalk --edge_list <path_to_edgelist> --output <path_to_output> --delimiter space --p 10 --q 0.01 --max_nodes 50000 --max_edges 50000 --workers 10`
+
+If you wanna walk faster, add more workers, if you wanna run with less memory consumption, decrease max_nodes or max_edges, checkout more information with
+
+`./fastwalk --help`
+
+### Reference
+
+> node2vec: Scalable Feature Learning for Networks.<br>
+> Aditya Grover and Jure Leskovec.<br>
+> Knowledge Discovery and Data Mining, 2016.<br>
+> <https://arxiv.org/abs/1607.00653>
