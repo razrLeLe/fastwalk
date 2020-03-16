@@ -36,3 +36,7 @@ If you wanna walk faster, add more workers, if you wanna run with less memory co
 > Aditya Grover and Jure Leskovec.<br>
 > Knowledge Discovery and Data Mining, 2016.<br>
 > <https://arxiv.org/abs/1607.00653>
+
+### Acknowledgements
+
+I would like to thank Yuanyuan Zhu for discussions on the performance of node2vec, and thanks to Weichen Shen for [his great work](https://github.com/shenweichen/GraphEmbedding).
