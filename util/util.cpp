@@ -20,13 +20,10 @@ namespace util {
   void Util::log(const std::string &in_s){
     std::time_t now = std::time(0);
     std::tm *ltm = std::localtime(&now);
+    char buf[128];
+    strftime(buf, 128, "%Y-%m-%d %H:%M:%S", ltm);
     std::cout 
-      << "[" << 1900+ltm->tm_year 
-      << 1 + ltm->tm_mon 
-      << ltm->tm_mday << " "
-      << ltm->tm_hour << ":"
-      << ltm->tm_min << ":"
-      << ltm->tm_sec << "] "
+      << "[" << buf << "] "
       << in_s 
       << std::endl;
   }
