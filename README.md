@@ -4,7 +4,7 @@ A multi-thread implementation of node2vec random walk.
 
 ### Introduction
 
-This repository provides a multi-thread implementation of node2vec random walk, and with alias table based on LRU cache, it can process with limited memory usage, so that walking through a giant graph on a single machine can be possible.
+This repository provides a multi-thread implementation of node2vec random walk, with alias table based on LRU cache, it can process with limited memory usage, so that walking through a giant graph on a single machine can be possible.
 
 Tested for a graph that contains 23 thousand nodes and 23 million edges, with parameter
 
