@@ -28,11 +28,11 @@ node2 node3 [edge_weight]
 
 edge_weight is 1.0 as default.
 
-Compile first:
+compile:
 
 `make`
 
-then run with:
+run with:
 
 `./fastwalk --edge_list <path_to_edgelist> --output <path_to_output> --delimiter space --p 10 --q 0.01 --max_nodes 50000 --max_edges 50000 --workers 10`
 
