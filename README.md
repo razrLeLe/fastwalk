@@ -18,6 +18,16 @@ only 11GB memory used, and finished walking within 2 hours.
 
 ### Usage
 
+Prepare input data with format as below:
+
+```
+node1 node2 [edge_weight]
+node2 node3 [edge_weight]
+...
+```
+
+edge_weight is 1.0 as default.
+
 Compile first:
 
 `make`
