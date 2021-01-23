@@ -12,6 +12,8 @@ Tested for a graph that contains 23 thousand nodes and 23 million edges, with pa
 
 only 11GB memory used, and finished walking within 2 hours.
 
+Visit https://blog.razrlele.com/p/2650 for more.
+
 ### Prerequisites
 
 - g++ 4.8+.
